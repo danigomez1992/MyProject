@@ -3,7 +3,6 @@ package InterviewTasks.swap_num;
 public class Swap {
     public static void main(String[] args) {
 
-
         System.out.println("First way: ");
 
         int x = 15;
@@ -20,13 +19,13 @@ public class Swap {
         System.out.println("\nSecond way:");
 
 
-        int s = 150;
-        int p = 122;
+        int s = 2;
+        int p = 5;
 
         System.out.println("s = " + s + " and p = " + p);
-        s = p + s; // 55
-        p = p + s; // 65
-        s = p - s; // 10
+        s = p + s; // 7
+        p = p + s; // 12
+        s = p - s; // 5
         p = p - (s * 2);
 
         System.out.println("s = " + s + " and p = " + p);
@@ -59,6 +58,18 @@ public class Swap {
             }
         }
         System.out.println("f = " + f + " and g = " + g);
+
+        System.out.println("\nFifth way:");
+
+        int h = 10; // --> 15
+        int i = 15; // --> 10
+        System.out.println("h = " + h + " and i = " + i);
+
+        h = h + i; // 25 --> new value of h and i is the same original value
+        i = h - i; // 10 --> here we are assigning a new value to i doing ( 25(h) - 15(i)) = 10 -> we swap the first number
+        h = h - i; // 15 --> here the value of h is the same as the previous step
+        //    15 = 25 - 10
+        System.out.println("h = " + h + " and i = " + i);
 
 
     }
